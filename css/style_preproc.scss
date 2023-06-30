@@ -5,7 +5,6 @@
 
 
 
-
 .container{
   max-width: 1064px;
   margin: auto;
@@ -15,27 +14,26 @@
   background-color: #F0EFEB;
   padding-top: 90px;
   padding-left: 188px;
+  h2{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 42px;
+  }
+  .get_to_know{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 26px;
+  }
 }
 
-.greeting h2{
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 70px;
-  color: #000000;
-  margin-bottom: 42px;
-}
-
-.greeting .get_to_know{
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  margin-bottom: 26px;
-}
 
 .black_button{
   font-family: 'Roboto', serif;
@@ -62,18 +60,21 @@
 
 .our_best_sellers{
   padding-top: 60px;
+  h2{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 27px;
+    &:last-of-type{
+      margin-bottom: 52px;
+    }
+  }
 }
 
-.our_best_sellers h2{
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 27px;
-}
 
 .are_you_curious{
   font-family: 'Roboto', serif;
@@ -98,80 +99,72 @@
   margin-bottom: 88px;
 }
 
-.our_best_sellers h2:last-of-type{
-  margin-bottom: 52px;
+
+
+.card{
+  margin: auto; /*in example margin bottom 248px*/
+  text-align: center;
+  img{
+    margin-bottom: 27px;
+  }
+  h3{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    max-width: 156px;
+    margin-left: 76px;
+    margin-bottom: 17px;
+  }
+  .price{
+    margin-bottom: 10px;
+  }
+  a{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+  }
 }
 
 .cards{
   display: flex;
   justify-content: space-between;
+  .owl-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .owl-stage{
+    display: flex;
+    align-items: center;
+  }
+  .owl-dots{
+    display: flex;
+    justify-content: center;
+    .owl-dot span{
+      background-color: #21F7EC;
+      width: 15px;
+      height: 15px;
+      border-radius: 40%;
+      margin-bottom: 268px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .active span{
+      width: 20px;
+      height: 20px;
+      background-color: #33D3BC;
+    }
+  }
 }
 
-.card{
-  margin: auto; /*in example margin bottom 248px*/
-  text-align: center;
-}
 
-.card img{
-  margin-bottom: 27px;
-}
 
-.card h3{
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  color: #000000;
-  max-width: 156px;
-  margin-left: 76px;
-  margin-bottom: 17px;
-}
-
-.card .price{
-  margin-bottom: 10px;
-}
-
-.card a{
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration-line: underline;
-  color: #000000;
-}
-
-.cards .owl-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards .owl-stage{
-  display: flex;
-  align-items: center;
-}
-
-.cards .owl-dots{
-  display: flex;
-  justify-content: center;
-}
-
-.cards .owl-dots .owl-dot span{
-  background-color: #21F7EC;
-  width: 15px;
-  height: 15px;
-  border-radius: 40%;
-  margin-bottom: 268px;
-  margin-right: 10px;
-  display: inline-block;
-}
-
-.cards .owl-dots .active span{
-  width: 20px;
-  height: 20px;
-  background-color: #33D3BC;
-}
