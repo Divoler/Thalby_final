@@ -320,10 +320,48 @@ table {
   max-width: 1064px;
   margin: auto; }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+header {
+  background-color: #FFFFFF;
+  padding: 15px 0; }
+  header .container {
+    max-width: 1064px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .header_lt {
+    display: flex;
+    justify-content: space-between; }
+    header .header_lt li a {
+      font-family: 'robotobold', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      color: #1C1B1B;
+      text-decoration: none;
+      margin-right: 28px; }
+  header .header_rt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header_rt li a {
+      margin-left: 27px; }
+  header .header_logo {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 40px); }
+
 .greeting {
-  background-color: #F0EFEB;
-  padding-top: 90px;
-  padding-left: 188px; }
+  background-color: #F0EFEB; }
+  .greeting .container {
+    padding-top: 90px;
+    padding-left: 188px;
+    position: relative; }
   .greeting h2 {
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -360,21 +398,21 @@ table {
 .phone_tablet {
   position: absolute;
   top: 0px;
-  right: 60px; }
+  right: -50px; }
 
-.our_best_sellers {
+.our_best_sellers .container {
   padding-top: 60px; }
-  .our_best_sellers h2 {
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 27px; }
-    .our_best_sellers h2:last-of-type {
-      margin-bottom: 52px; }
+.our_best_sellers h2 {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 27px; }
+  .our_best_sellers h2:last-of-type {
+    margin-bottom: 52px; }
 
 .are_you_curious {
   font-family: 'Roboto', serif;
@@ -451,3 +489,239 @@ table {
       width: 20px;
       height: 20px;
       background-color: #33D3BC; }
+
+.people_society {
+  background: rgba(204, 204, 204, 0.3); }
+  .people_society .container {
+    padding-top: 76px;
+    padding-bottom: 51px;
+    gap: 50px; }
+
+.people_society_container {
+  max-width: 532px; }
+  .people_society_container h3 {
+    margin-top: 63px;
+    margin-bottom: 31px;
+    color: #000;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+  .people_society_container h4 {
+    color: #000;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px; }
+  .people_society_container a {
+    color: #000;
+    font-size: 17px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline; }
+
+.culture_heritage {
+  background: rgba(204, 204, 204, 0.6); }
+  .culture_heritage .container {
+    padding-top: 76px;
+    padding-bottom: 51px;
+    flex-direction: row-reverse;
+    gap: 50px; }
+
+.power_politics {
+  background: rgba(204, 204, 204, 0.3); }
+  .power_politics .container {
+    padding-top: 76px;
+    padding-bottom: 51px;
+    gap: 50px; }
+
+.some_features .head_words {
+  text-align: center; }
+  .some_features .head_words h2 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 190px; }
+.some_features .features_examples {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center; }
+.some_features img {
+  padding-bottom: 26px; }
+.some_features .features {
+  margin-bottom: 110px;
+  margin-top: 69px;
+  padding-right: 24px;
+  text-align: center; }
+.some_features p {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; }
+
+.voices {
+  background: linear-gradient(#FFFFFF 50%, #F0F0F0 50%); }
+  .voices .end_words h2 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 53px;
+    margin-bottom: 102px; }
+  .voices .voices_container {
+    display: flex;
+    justify-content: space-between; }
+    .voices .voices_container img {
+      margin-bottom: 35px; }
+    .voices .voices_container h5 {
+      color: #000;
+      text-align: center;
+      font-size: 22px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      margin-bottom: 40px; }
+    .voices .voices_container p {
+      color: #000;
+      text-align: center;
+      font-size: 19px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 44px; }
+    .voices .voices_container a {
+      color: #000;
+      text-align: center;
+      font-size: 18px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration-line: underline; }
+    .voices .voices_container .voices_speech {
+      text-align: center;
+      margin-bottom: 52px; }
+
+.keep_touch .container {
+  text-align: center;
+  margin-top: 79px; }
+  .keep_touch .container h3 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 9px; }
+  .keep_touch .container h5 {
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 26px; }
+.keep_touch .central_wrapper {
+  max-width: 366px; }
+.keep_touch .form_flex {
+  display: flex; }
+.keep_touch .margin_a {
+  margin: auto; }
+.keep_touch .input_first_name {
+  margin-right: 60px;
+  max-width: 153px;
+  margin-bottom: 18px; }
+  .keep_touch .input_first_name input {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 12px 11px 8px; }
+.keep_touch .input_last_name {
+  max-width: 153px; }
+  .keep_touch .input_last_name input {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 12px 11px 8px; }
+.keep_touch .input_email {
+  margin-bottom: 16px; }
+  .keep_touch .input_email input {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 12px 11px 8px; }
+.keep_touch .subrscribe {
+  text-align: center;
+  margin-bottom: 88px; }
+  .keep_touch .subrscribe button {
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 23px 10px 23px; }
+
+footer {
+  background: #020202;
+  padding: 61px 0 16px; }
+  footer .container {
+    max-width: 1064px;
+    margin: auto; }
+  footer .ft_wrapper {
+    display: flex;
+    justify-content: space-between; }
+    footer .ft_wrapper .ft_lt {
+      display: flex;
+      flex-direction: column; }
+      footer .ft_wrapper .ft_lt .ft_logo {
+        margin-bottom: 45px; }
+      footer .ft_wrapper .ft_lt .social_links {
+        display: flex;
+        gap: 23px; }
+    footer .ft_wrapper .ft_rt {
+      display: flex;
+      gap: 72px;
+      text-align: start;
+      margin-bottom: 20px; }
+      footer .ft_wrapper .ft_rt li {
+        margin-bottom: 12px; }
+        footer .ft_wrapper .ft_rt li a {
+          text-decoration: none;
+          font-family: 'robotoregular', sans-serif;
+          font-size: 14px;
+          line-height: 21px;
+          color: #FFFFFF; }
+        footer .ft_wrapper .ft_rt li:first-of-type {
+          margin-bottom: 36px; }
+          footer .ft_wrapper .ft_rt li:first-of-type a {
+            line-height: 23px; }
+  footer p {
+    font-family: 'robotoregular', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF; }
