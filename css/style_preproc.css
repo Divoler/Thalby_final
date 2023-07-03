@@ -345,23 +345,48 @@ header {
       color: #1C1B1B;
       text-decoration: none;
       margin-right: 28px; }
+  @media screen and (max-width: 964px) {
+    header .header_lt li a {
+      margin-right: 3px; } }
+  @media screen and (max-width: 1085px) {
+    header .header_lt li a {
+      padding-left: 15px; } }
   header .header_rt {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     header .header_rt li a {
       margin-left: 27px; }
+  @media screen and (max-width: 1085px) {
+    header .header_rt li a {
+      padding-right: 15px; } }
   header .header_logo {
     position: absolute;
     top: 10px;
     left: calc(50% - 40px); }
+  @media screen and (max-width: 850px) {
+    header .header_logo {
+      left: calc(50% - 10px); } }
 
 .greeting {
   background-color: #F0EFEB; }
   .greeting .container {
-    padding-top: 90px;
-    padding-left: 188px;
-    position: relative; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px; }
+  @media screen and (max-width: 768px) {
+    .greeting .container {
+      flex-wrap: wrap;
+      justify-content: center; } }
+  .greeting .phone_tablet {
+    max-width: 599px;
+    max-height: 528px;
+    position: relative;
+    left: 120px; }
+  @media screen and (max-width: 1085px) {
+    .greeting .phone_tablet {
+      left: 15px; } }
   .greeting h2 {
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -370,6 +395,9 @@ header {
     line-height: 70px;
     color: #000000;
     margin-bottom: 42px; }
+  @media screen and (max-width: 1085px) {
+    .greeting h2 {
+      padding-left: 15px; } }
   .greeting .get_to_know {
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -378,6 +406,9 @@ header {
     line-height: 28px;
     color: #000000;
     margin-bottom: 26px; }
+  @media screen and (max-width: 1085px) {
+    .greeting .get_to_know {
+      padding-left: 15px; } }
 
 .black_button {
   font-family: 'Roboto', serif;
@@ -394,11 +425,9 @@ header {
   text-decoration: none;
   border-radius: 14px;
   margin-bottom: 90px; }
-
-.phone_tablet {
-  position: absolute;
-  top: 0px;
-  right: -50px; }
+  @media screen and (max-width: 1085px) {
+    .black_button {
+      margin-left: 15px; } }
 
 .our_best_sellers .container {
   padding-top: 60px; }

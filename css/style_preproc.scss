@@ -2,6 +2,11 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .container {
   max-width: 1064px;
@@ -39,8 +44,12 @@ header {
         color: #1C1B1B;
         text-decoration: none;
         margin-right: 28px;
-
-
+        @include max-screen(964px) {
+          margin-right: 3px;
+        }
+        @include max-screen(1085px) {
+          padding-left: 15px;
+        }
       }
     }
   }
@@ -53,6 +62,9 @@ header {
     li {
       a {
         margin-left: 27px;
+        @include max-screen(1085px) {
+          padding-right: 15px;
+        }
       }
     }
   }
@@ -60,7 +72,10 @@ header {
   .header_logo {
     position: absolute;
     top: 10px;
-    left: calc(50% - 40px)
+    left: calc(50% - 40px);
+    @include max-screen(850px){
+      left: calc(50% - 10px);
+    }
   }
 }
 
@@ -68,9 +83,24 @@ header {
   background-color: #F0EFEB;
 
   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 90px;
-    padding-left: 188px;
+    @include max-screen(768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .phone_tablet {
+    max-width: 599px;
+    max-height: 528px;
     position: relative;
+    left: 120px;
+    @include max-screen(1085px) {
+      left: 15px;
+    }
   }
 
   h2 {
@@ -81,6 +111,9 @@ header {
     line-height: 70px;
     color: #000000;
     margin-bottom: 42px;
+    @include max-screen(1085px) {
+      padding-left: 15px;
+    }
   }
 
   .get_to_know {
@@ -91,6 +124,9 @@ header {
     line-height: 28px;
     color: #000000;
     margin-bottom: 26px;
+    @include max-screen(1085px) {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -110,13 +146,11 @@ header {
   text-decoration: none;
   border-radius: 14px;
   margin-bottom: 90px;
+  @include max-screen(1085px) {
+    margin-left: 15px;
+  }
 }
 
-.phone_tablet {
-  position: absolute;
-  top: 0px;
-  right: -50px;
-}
 
 .our_best_sellers {
   .container {
