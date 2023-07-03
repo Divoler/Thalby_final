@@ -275,7 +275,31 @@ header {
 
 .people_society {
   background: rgba(204, 204, 204, 0.30);
-
+  img{
+  @include max-screen(465px) {
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  }
+  p {
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  h3{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  a{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   .container {
     padding-top: 76px;
     padding-bottom: 51px;
@@ -320,7 +344,24 @@ header {
 
 .culture_heritage {
   background: rgba(204, 204, 204, 0.60);
-
+  p {
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  h3{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  a{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   .container {
     padding-top: 76px;
     padding-bottom: 51px;
@@ -331,7 +372,24 @@ header {
 
 .power_politics {
   background: rgba(204, 204, 204, 0.30);
-
+  p {
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  h3{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  a{
+    @include max-screen(600px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   .container {
     padding-top: 76px;
     padding-bottom: 51px;

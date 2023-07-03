@@ -523,6 +523,23 @@ header {
 
 .people_society {
   background: rgba(204, 204, 204, 0.3); }
+  @media screen and (max-width: 465px) {
+    .people_society img {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .people_society p {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .people_society h3 {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .people_society a {
+      padding-right: 15px;
+      padding-left: 15px; } }
   .people_society .container {
     padding-top: 76px;
     padding-bottom: 51px;
@@ -558,6 +575,18 @@ header {
 
 .culture_heritage {
   background: rgba(204, 204, 204, 0.6); }
+  @media screen and (max-width: 600px) {
+    .culture_heritage p {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .culture_heritage h3 {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .culture_heritage a {
+      padding-right: 15px;
+      padding-left: 15px; } }
   .culture_heritage .container {
     padding-top: 76px;
     padding-bottom: 51px;
@@ -566,6 +595,18 @@ header {
 
 .power_politics {
   background: rgba(204, 204, 204, 0.3); }
+  @media screen and (max-width: 600px) {
+    .power_politics p {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .power_politics h3 {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media screen and (max-width: 600px) {
+    .power_politics a {
+      padding-right: 15px;
+      padding-left: 15px; } }
   .power_politics .container {
     padding-top: 76px;
     padding-bottom: 51px;
